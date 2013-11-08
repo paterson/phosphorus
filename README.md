@@ -12,7 +12,7 @@ Phosphorus is ideal in any scenerio where you have simple non sensitive that nee
 
 Say you wanted to implement real time updating of the number of views a video gets on youtube. Suppose we've a function called `updateViewCount()` which takes a number and updates the view count on the screen to that. Let's use `http://www.youtube.com/watch?v=D-0DUPowEw0` as a sample video. Let's use that identifier `D-0DUPowEw0` as a unique identifier. Using Phosphorus, it'd be as simple as this:
 
-    key = 'D-0DUPowEw0'
+    var key = 'D-0DUPowEw0'
     Phosphorus.get(key, function (count) {
         Phosphorus.set(key, count++)
         updateViewCount(count)
@@ -114,6 +114,6 @@ TO-DO
 -----
 
 1. Angular/Ember integration
-2. Auth. Phosphorus is completely insecure right now.
+2. Auth. Phosphorus is completely insecure right now3.
 3. Token generation/checking system
 4. Upgrade servers, seperate redis instance. Right now, phosphorus runs off a tiny $5 a month instance, improving this should speed it up massively.
