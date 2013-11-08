@@ -39,7 +39,7 @@ This will be instantious because it'll come from localstorage, but don't worry, 
 Installation
 -------
 
-Phosphorus relies on socket.io and zepto/jquery, phosphorus.js and phosphorus.min.js can be found in /client.
+Phosphorus relies on socket.io and zepto/jquery. phosphorus.js and phosphorus.min.js can be found in /client.
 
      <script src="http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
      <script src="http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.6/socket.io.min.js"></script>
