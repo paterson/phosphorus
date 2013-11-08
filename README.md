@@ -12,13 +12,13 @@ Phosphorus is ideal in any scenerio where you have simple non sensitive that nee
 
 Say you wanted to implement real time updating of the number of views a video gets on youtube. Suppose we've a function called `updateViewCount()` which takes a number and updates the view count on the screen to that. Let's use `http://www.youtube.com/watch?v=D-0DUPowEw0` as a sample video. Let's use that identifier `D-0DUPowEw0` as a unique identifier. Using Phosphorus, it'd be as simple as this:
 
-    v = 'D-0DUPowEw0'
-    Phosphorus.get(v, function (count) {
-        Phosphorus.set(v, count++)
+    key = 'D-0DUPowEw0'
+    Phosphorus.get(key, function (count) {
+        Phosphorus.set(key, count++)
         updateViewCount(count)
     })
     
-    Phosphorus.listen(v, function (count) {
+    Phosphorus.listen(key, function (count) {
         updateViewCount(count)
     })
     
