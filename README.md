@@ -116,3 +116,4 @@ TO-DO
 1. Angular/Ember integration
 2. Auth. Phosphorus is completely insecure.
 3. Token generation/checking system
+4. Upgrade servers, seperate redis instance. Right now, phosphorus runs off a tiny $5 a month instance, improving this should speed it up massively.
