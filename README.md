@@ -104,7 +104,7 @@ Stop automatically listening changing the value of a key. This can also take an 
 ----------------------
 
 
-**Head's Up - ** if you don't want to type out `Phosphorus` the whole time, you can use `Fos4us` to save time, just don't mix the two!
+**Sidenote -** if you don't want to type out `Phosphorus` the whole time, you can use `Fos4us` to save time, just don't mix the two!
 
 License
 -------
