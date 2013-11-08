@@ -114,5 +114,5 @@ TO-DO
 -----
 
 1. Angular/Ember integration
-2. Auth
+2. Auth. Phosphorus is completely insecure.
 3. Token generation/checking system
