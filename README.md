@@ -63,7 +63,6 @@ Features / Usage
         console.log(value)
     })
     
-We're now listening out for any changes. That can be changed with `Phosphorus.unsubscribe(key)`
 
 ### Phosphorus.set
     
