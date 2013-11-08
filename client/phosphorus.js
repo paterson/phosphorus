@@ -1,25 +1,3 @@
-/*
-
-Usage:
-
-Phosphorus.token = '1'
-Phosphorus.get('score', function (score) {
-  // do stuff
-  Phosphorus.set('score', 4)
-
-})
-
-document.addEventListener("phosphorus-score",function (e) {
-  // score has changed, new value is in e.detail
-})
-
-
-
-*/
-
-
-
-
 Phosphorus = {}
 Phosphorus.baseUrl = 'http://146.185.144.4'
 Phosphorus.socket = io.connect(Phosphorus.baseUrl);
