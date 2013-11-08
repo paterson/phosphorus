@@ -39,11 +39,11 @@ This will be instantious because it'll come from localstorage, but don't worry, 
 Installation
 -------
 
-Phosphorus relies on socket.io and zepto/jquery:
+Phosphorus relies on socket.io and zepto/jquery, phosphorus.js can be found in /client.
 
      <script src="http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
      <script src="http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.6/socket.io.min.js"></script>
-     <script src="http://cdn.phosphorus.io/0.1/index.js"></script>
+     <script src="phosphorus.js"></script>
 
 
 Then simply set a token:
@@ -52,7 +52,7 @@ Then simply set a token:
         Phosphorus.token = '1'
     </script>
     
-Try to make sure your token is unique, it can be alphanumeric and can have underscores in it. If it's not unique then you risk writing over someone else's data, or vice versa.
+Try to make sure your token is unique, it can be alphanumeric and can have underscores in it. If it's not unique then you risk writing over someone else's data, or vice versa. See todo.
 
 Features / Usage
 ----------------
