@@ -10,19 +10,19 @@ Use Cases
 
 Phosphorus is ideal in any scenerio where you have simple non sensitive that needs to be shared over different computers, but where you still need a central store. A simple example would be the following:
 
-Say you wanted to implement real time updating of the number of views a video gets on youtube. Suppose we've a function called `updateViewCount()` which takes a number and updates the view count on the screen to that. Let's use `http://www.youtube.com/watch?v=D-0DUPowEw0` as a sample video. Let's use that identifier `D-0DUPowEw0` as a unique identifier, and lets say it's in a variable v (because it's the param `v` in the url). Using Phosphorus, it'd be as simple as this:
+Say you wanted to implement real time updating of the number of views a video gets on youtube. Suppose we've a function called `updateViewCount()` which takes a number and updates the view count on the screen to that. Let's use `http://www.youtube.com/watch?v=D-0DUPowEw0` as a sample video. Let's use that identifier `D-0DUPowEw0` as a unique identifier. Using Phosphorus, it'd be as simple as this:
 
-
+    v = 'D-0DUPowEw0'
     Phosphorus.get(v, function (count) {
         Phosphorus.set(v, count++)
         updateViewCount(count)
     })
     
-    Phosphorus.listen(key, function (count) {
+    Phosphorus.listen(v, function (count) {
         updateViewCount(count)
     })
     
-Done! Now when you watch a video, everyone's view count will go up by one, and when someone else starts watching, your's will go up with everyone elses. All in 7 lines.
+Done! Now when you watch a video, everyone's view count will go up by one, and when someone else starts watching, your's will go up with everyone elses. All in 8 lines.
 
 Now say there was somewhere else on the page where you needed the count. All you've to do is go 
 
