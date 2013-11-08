@@ -1,7 +1,7 @@
 Phosphorus
 ========
 
-Phosphorus is a key store system based on redis that has a lot more under the hood. It's lightning fast because it intelligently caches everything in localStorage and only actually hits our server once per session. The first request takes less than 100ms, and  everyone after that takes a millisecond *even if the data changes on the server*. I'll say that again - **Less than a millisecond even if the data changes on the server**
+Phosphorus is a key store system based on redis that has a lot more under the hood. It's lightning fast because it intelligently caches everything in localStorage and only actually hits our server once per session. The first request takes around 100ms, and  everyone after that takes a millisecond *even if the data changes on the server*. I'll say that again - **Less than a millisecond even if the data changes on the server**
 
 It'll also allow you to listen out for when the data changes.
 
