@@ -15,19 +15,15 @@ app.use(express.bodyParser())
 app.use(allowCrossDomain)
 
 app.post('/get', function (req, res) {
-  var start_time = +new Date();
   client.get(req.body.token.toString() + ":" + req.body.key.toString(), function(err, value) {
-    console.log('got result', +new Date() - start_time);
     res.json(JSON.parse(value))
     res.end()
   })
 })
 
 app.post('/set', function (req, res) {
-  var start_time = +new Date();
   var key = req.body.token.toString() + ":" + req.body.key.toString()
   client.set(key, JSON.stringify(req.body.value))
-  console.log('set result', +new Date() - start_time);
   io.sockets.emit(key, req.body.value)
   res.end()
 })
