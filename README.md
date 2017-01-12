@@ -3,6 +3,19 @@ Phosphorus
 
 Phosphorus is a client side key-value store that uses redis to sync data with every other client. This allows it to be used to sync real time data across clients and have a semi-permanent data store backing it up.
 
+Requires
+---------
+#### Client
+- socket io >= 0.9.x
+- Zepto JS >= 1.0
+
+#### Server
+- nodeJS >= 0.8.x
+- expressJS >= 3.0.0
+- redis >= 0.1.7.x
+- socket io >= 0.9.x
+
+
 Use Cases
 ---------
 
